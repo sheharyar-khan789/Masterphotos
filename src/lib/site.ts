@@ -117,8 +117,19 @@ export const serviceCategories: ServiceCategory[] = [
     ],
   },
   {
-    id: "printing-scanning",
+    id: "corporate-commercial",
     number: "07",
+    title: "Corporate & Commercial Video Production",
+    items: [
+      { title: "Event Management" },
+      { title: "Television Video Commercials" },
+      { title: "Corporate Profile Videos" },
+      { title: "Promotional Videos" },
+    ],
+  },
+  {
+    id: "printing-scanning",
+    number: "08",
     title: "Printing & Scanning",
     items: [
       {

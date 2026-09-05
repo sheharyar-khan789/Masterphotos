@@ -1,4 +1,41 @@
-import { team } from "@/lib/site";
+const team = [
+  {
+    id: "raheel",
+    name: "Raheel Ali Butt",
+    role: "CEO",
+    initials: "RAB",
+  },
+  {
+    id: "asim",
+    name: "Asim Muneer",
+    role: "Filmmaker, Editor",
+    initials: "AM",
+  },
+  {
+    id: "hassan",
+    name: "Hassan Arshad",
+    role: "Audio & Sound Specialist",
+    initials: "HA",
+  },
+  {
+    id: "usman",
+    name: "Usman Ahmed",
+    role: "Cinematographer",
+    initials: "UA",
+  },
+  {
+    id: "faisal",
+    name: "Faisal Suleman",
+    role: "Camera Operator, Content Specialist",
+    initials: "FS",
+  },
+  {
+    id: "abdullah",
+    name: "Abdullah Nazir",
+    role: "Camera Operator, Production Assistant",
+    initials: "AN",
+  },
+] as const;
 
 export default function Team() {
   return (
@@ -11,9 +48,12 @@ export default function Team() {
           </h2>
         </div>
 
-        <div className="max-w-md rounded-sm border border-line bg-background p-6 sm:flex sm:items-center sm:gap-6">
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {team.map((member) => (
-            <div key={member.id} className="sm:flex sm:items-center sm:gap-6">
+            <div
+              key={member.id}
+              className="flex items-center gap-6 rounded-sm border border-line bg-background p-6"
+            >
               <div
                 className="flex h-20 w-20 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-gold/25 to-transparent ring-1 ring-gold/30"
                 aria-hidden="true"
@@ -22,7 +62,7 @@ export default function Team() {
                   {member.initials}
                 </span>
               </div>
-              <div className="mt-5 sm:mt-0">
+              <div>
                 <p className="font-display text-base font-bold uppercase tracked-tight">
                   {member.name}
                 </p>
