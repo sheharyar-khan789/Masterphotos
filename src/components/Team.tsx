@@ -26,7 +26,7 @@ const team = [
   {
     id: "faisal",
     name: "Faisal Suleman",
-    role: "Camera Operator, Content Specialist",
+    role: "photographer& videographer",
     initials: "FS",
   },
   {
@@ -34,6 +34,12 @@ const team = [
     name: "Abdullah Nazir",
     role: "Camera Operator, Production Assistant",
     initials: "AN",
+  },
+  {
+    id: "amir",
+    name: "Amir shahzad",
+    role: "Camera Operator, Production Assistant",
+    initials: "As",
   },
 ] as const;
 
